@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <title>ResumeCreatingWebpage</title>
+    <style>
+        body
+        {
+            /* border-radius: 0px;
+            background: #5587ec; */
+
+            text-transform: capitalize;
+            font-family:cursive;
+           
+            
+        }
+        img{
+            border: 2px solid;
+            border-color:black;
+            border-top-right-radius: 15%;
+            border-bottom-left-radius: 15%;
+        }
+       
+       
+           
+       
+    </style>
+</head>
+<body>
+    <div class="containerfluid" contenteditable="true" >
+        <div class="row">
+            <div class="col-md-6 " id="left" style="background-color:ghostwhite;">
+                <div class="row">
+
+                    <div class="col-12">
+
+                    <div class="col text-center">
+                        <img class="img-fluid  text-center  " src="tick-dynamic-premium.png"  id="one" style="height: 350px;width: 410px;">  
+                    </div>
+                    <div class="text-center">
+                        <label class="btn btn-dark d-print-none" for="click">Upload</label>
+                    </div>
+            
+                     <input  type="file" id="click" style="display: none;">
+
+                    </div>
+          
+                    <div  class="col-12" >
+                        <div class="fs-2 text-center text-uppercase ">
+                            mohd sultan mansuri
+                        </div>
+                        <div class="fs-4  text-center text-uppercase">
+                            computer science
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 mt-5 ">
+
+                        <div class="fs-2 text-uppercase bg-dark text-white">contact</div>
+                    
+                    <div class="fs-4">Email:- sultanmansuri9399@gamil.com</div>
+                    <div class="fs-4">Mobile No:-91+9399439986</div>
+                    <div class="fs-4">location:-Madhya Pradesh (Bhopal)</div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6  " id="right" style="background-color:ghostwhite;>
+                <div class="row">
+                    <div class="co-12">
+                        <div class="fs-2 text-uppercase bg-dark text-white">Education</div>
+                        <div class="fs-4" style="border-bottom: 3px solid black;">B Tech</div>
+                        <div class="fs-5">sagar institue of research of technology </div>
+                        <span>2019/2023</span>
+                        <div class="fs-5">Bhopal (m.p) </div>
+                    </div>
+
+                    <div class="co-12 ">
+                        <div class="fs-4" style="border-bottom: 3px solid black;">high secondar school</div>
+                        <div class="fs-5">high secondar school Name </div>
+                        <span>2019/2023</span>
+                        <div class="fs-5">Bhopal (m.p) </div>
+                    </div>
+                    <div class="co-12 ">
+                        <div class="fs-4" style="border-bottom: 3px solid black;">high school</div>
+                        <div class="fs-5">high school Name</div>
+                        <span>2019/2023</span>
+                        <div class="fs-5">Bhopal (m.p) </div>
+                    </div>
+                    <div class="co-12 ">
+                          <div class="fs-2 text-uppercase bg-dark text-white">Skills</div>
+                          <li class="fs-5">HTML</li>
+                          <li class="fs-5">HTML</li>
+                          <li class="fs-5">HTML</li>
+                          <li class="fs-5">HTML</li>
+                        
+                           
+                    </div>
+                    <div class="co-12 ">
+                        <div class="fs-2 text-uppercase bg-dark text-white">projects</div>
+                        <li class="fs-4">resume builder webpage</li>
+                        <li class="fs-4">E commerce</li>
+                         
+                  </div>
+                    
+                </div>
+                
+
+                <script>
+
+              let name1= document.getElementById("one");
+              let name2= document.getElementById("click")
+
+              name2.onchange=function()
+                 { 
+                       name1.src= URL.createObjectURL(name2.files[0]);
+
+                  }
+
+                  
+                </script>
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-12 text-center bg-light">
+        <div class="btn btn-dark w-25 mt-1 d-print-none" onclick="love()">Print</div>
+    </div>
+
+  <script>
+    function love()
+    {
+
+        window.print();
+    }
+  </script>
+</body>
+</html>
